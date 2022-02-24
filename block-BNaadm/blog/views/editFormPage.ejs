@@ -1,0 +1,16 @@
+
+<%- include('partials/header.ejs' ) %>
+
+    <form action="/blogs/<%= articles.id %>/post" method="POST">
+        <label for="fname">title:</label><br>
+        <input type="text" id="fname" name="title"  value="<%= articles.title %>"><br>
+        <label for="lname">description:</label><br>
+        <input type="text" id="lname" name="description" value="<%= articles.description %>"><br><br>
+        <label for="fname">tags:</label><br>
+        <input type="text" id="fname" name="tags" value="<%= articles.tags %>"><br>
+        <label for="fname">author:</label><br>
+        <input type="text" id="fname" name="author" value="<%= articles.author %>"><br>
+        <a href=""><button type="submit">sub</button></a> 
+      </form> 
+</body>
+</html>
