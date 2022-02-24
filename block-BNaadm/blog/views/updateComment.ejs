@@ -1,0 +1,11 @@
+<%- include('partials/header.ejs' ) %>
+
+    <form action="/comments/<%= comments.id %>/post" method="POST">
+        <textarea rows="6" cols="40" name="content" >
+            <%=  comments.content %>
+        </textarea><br>
+            <input type="submit" value="ADD COMMENT">
+    </form>
+  </form> 
+</body>
+</html>
